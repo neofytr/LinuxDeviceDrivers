@@ -3,3 +3,6 @@
 !.vscode
 neo*
 !neo.ko
+m*
+M*
+!Makefile
