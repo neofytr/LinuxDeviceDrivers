@@ -14,6 +14,10 @@ static int neo_module_init(void)
 {
     // NULL in the 3rd argument creates the new file in the root of the proc directory
     custom_proc_node = proc_create("neo", S_IRUSR | S_IRGRP | S_IROTH, NULL, &neo_proc_ops);
+    if (!custom_proc_node)
+    {
+        return -1;
+    }
     return 0;
 }
 
