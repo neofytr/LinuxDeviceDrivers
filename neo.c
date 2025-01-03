@@ -9,13 +9,23 @@ MODULE_DESCRIPTION("Basic read loadable kernel module");
 
 static struct proc_dir_entry *custom_proc_node;
 static struct proc_ops neo_proc_ops;
+char msg[] = "Hello, World!\n";
+static ssize_t neo_read(struct file *file_ptr, char *user_space_buffer, size_t count, loff_t *offset);
 
-static ssize_t neo_read(struct file *file_ptr, char __user *user_space_buffer, size_t count, loff_t *offset);
-
-static ssize_t neo_read(struct file *file_ptr, char __user *user_space_buffer, size_t count, loff_t *offset)
+static ssize_t neo_read(struct file *file_ptr, char *user_space_buffer, size_t count, loff_t *offset) // user_space_buffer contains the bytes that are read from the "file"
 {
-    printk("neo_read\n");
-    return 0;
+    size_t len = strlen(msg);
+    if (*offset >= len)
+        return 0;
+
+    if (*offset + count > len)
+        count = len - *offset;
+
+    if (copy_to_user(user_space_buffer, msg + *offset, count) != 0)
+        return -EFAULT;
+
+    *offset += count;
+    return count; // return the number of bytes read from the "file"
 }
 
 static int neo_module_init(void)
