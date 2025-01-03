@@ -1,0 +1,1 @@
+savedcmd_/home/raj/Desktop/LinuxDeviceDrivers/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/raj/Desktop/LinuxDeviceDrivers/Module.symvers -T /home/raj/Desktop/LinuxDeviceDrivers/modules.order -i Module.symvers -e 

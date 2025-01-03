@@ -1,0 +1,1 @@
+savedcmd_/home/raj/Desktop/LinuxDeviceDrivers/neo.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/raj/Desktop/LinuxDeviceDrivers/neo.ko /home/raj/Desktop/LinuxDeviceDrivers/neo.o /home/raj/Desktop/LinuxDeviceDrivers/neo.mod.o

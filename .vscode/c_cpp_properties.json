@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-6.8.0-49-generic/include",
+                "/usr/src/linux-headers-6.8.0-49-generic/arch/x86/include",
+                "/usr/src/linux-headers-6.8.0-49-generic/arch/x86/include/generated",
+                "/usr/src/linux-headers-6.8.0-49-generic/include/generated",
+                "/usr/src/linux-headers-6.8.0-49-generic/include/uapi",
+                "/usr/src/linux-headers-6.8.0-49-generic/arch/x86/include/uapi",
+                "/usr/src/linux-headers-6.8.0-49-generic/include/asm-generic",
+                "/usr/lib/gcc/x86_64-linux-gnu/13/include"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "MODULE",
+                "__GNUC__",
+                "KBUILD_MODNAME=\"mymodule\"",
+                "__x86_64__",
+                "__linux__",
+                "_Bool=bool"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
