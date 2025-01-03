@@ -7,7 +7,7 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("neofyt (rajisbornforcoc@gmail.com)");
 MODULE_DESCRIPTION("Basic read loadable kernel module");
 
-char msg[] = "Hello, World\n";
+char msg[] = "Hello, World, Let's Go\n";
 
 static struct proc_dir_entry *custom_proc_node;
 static struct proc_ops neo_proc_ops;
