@@ -7,13 +7,15 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("neofyt (rajisbornforcoc@gmail.com)");
 MODULE_DESCRIPTION("Basic read loadable kernel module");
 
+char msg[] = "Hello, World\n";
+
 static struct proc_dir_entry *custom_proc_node;
 static struct proc_ops neo_proc_ops;
-char msg[] = "Hello, World!\n";
 static ssize_t neo_read(struct file *file_ptr, char *user_space_buffer, size_t count, loff_t *offset);
 
 static ssize_t neo_read(struct file *file_ptr, char *user_space_buffer, size_t count, loff_t *offset) // user_space_buffer contains the bytes that are read from the "file"
 {
+
     size_t len = strlen(msg);
     if (*offset >= len)
         return 0;
