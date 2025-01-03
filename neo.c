@@ -14,9 +14,9 @@ char msg[MAX_SIZE] = "Hello, World, Let's Go\n";
 static struct proc_dir_entry *custom_proc_node;
 static struct proc_ops neo_proc_ops;
 static ssize_t neo_read(struct file *file_ptr, char *user_space_buffer, size_t count, loff_t *offset);
-ssize_t neo_write(struct file *, const char __user *, size_t, loff_t *);
+ssize_t neo_write(struct file *, const char *, size_t, loff_t *);
 
-ssize_t neo_write(struct file *file_ptr, const char __user *user_space_buffer, size_t count, loff_t *offset)
+ssize_t neo_write(struct file *file_ptr, const char *user_space_buffer, size_t count, loff_t *offset)
 {
     if (count > MAX_SIZE)
         count = MAX_SIZE;
