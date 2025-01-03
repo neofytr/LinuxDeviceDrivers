@@ -11,3 +11,6 @@ default:
 
 clean:
 	make -C $(KDIR) M=$(PWD) clean
+
+transfer:
+	multipass transfer -r ~/Desktop/LinuxDeviceDrivers/* primary:/home/ubuntu/Driver/
