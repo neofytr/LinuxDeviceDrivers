@@ -1,0 +1,1 @@
+savedcmd_/home/raj/Desktop/LinuxDeviceDrivers/hello_world/main.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/raj/Desktop/LinuxDeviceDrivers/hello_world/main.ko /home/raj/Desktop/LinuxDeviceDrivers/hello_world/main.o /home/raj/Desktop/LinuxDeviceDrivers/hello_world/main.mod.o
