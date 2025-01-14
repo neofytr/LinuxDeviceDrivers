@@ -37,6 +37,8 @@ static const struct modversion_info ____versions[]
 __used __section("__versions") = {
 	{ 0x2b6e2cf, "pcpu_hot" },
 	{ 0x122c3a7e, "_printk" },
+	{ 0x6d0abc4c, "param_ops_charp" },
+	{ 0xe976f3e4, "param_ops_int" },
 	{ 0xbdfb6dbb, "__fentry__" },
 	{ 0x5b8239ca, "__x86_return_thunk" },
 	{ 0x6ad2b3e, "module_layout" },
@@ -45,4 +47,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "28D89770A108E59C5D94323");
+MODULE_INFO(srcversion, "B71018BA3A7A8B5FB468693");
