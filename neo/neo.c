@@ -1,6 +1,7 @@
 #include <linux/module.h>
 #include <linux/stat.h>
 #include <linux/init.h>
+#include <errno.h>
 #include <linux/proc_fs.h>
 
 MODULE_LICENSE("GPL");
