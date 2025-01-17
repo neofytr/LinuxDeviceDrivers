@@ -40,4 +40,6 @@ The Kernel's role can be split into:
 
 ## Process Management
 
-The kernel is in charge of creating and destroying processes and handling their connection to the outside world.
+The kernel is in charge of creating and destroying processes and handling their connection to the outside world (input and output).
+
+Communication among different processes (through signals, pipes, or interprocess communication primitives)
