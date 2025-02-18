@@ -1,4 +1,4 @@
-obj-m = neo.o  # The obj-m variable is used by the kernel build system to specify modules to be built.
+obj-m = jiff.o  # The obj-m variable is used by the kernel build system to specify modules to be built.
 # The kernel build system automatically handles the compilation of .c files into .o files.
 # To build a module, add its corresponding .c file to the obj-m variable using the .o extension.
 

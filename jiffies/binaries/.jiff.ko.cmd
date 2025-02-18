@@ -1,0 +1,1 @@
+savedcmd_/home/raj/Desktop/LinuxDeviceDrivers/jiffies/jiff.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/raj/Desktop/LinuxDeviceDrivers/jiffies/jiff.ko /home/raj/Desktop/LinuxDeviceDrivers/jiffies/jiff.o /home/raj/Desktop/LinuxDeviceDrivers/jiffies/jiff.mod.o
